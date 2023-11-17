@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grade-Calculator</title>
+  </head>
+  <body>
+    <main>
+      <strong style="padding-bottom: 20px"
+        >Grade-Calculator: by Rahul Maurya</strong
+      >
+      <select class="Course-select">
+        <option value="python">Programming in Python</option>
+        <option value="english">English II</option>
+        <option value="mathematics">Mathematics for Data Science II</option>
+        <option value="statistics">Statistics for Data Science II</option>
+      </select>
+
+      <section
+        class="inputs"
+        style="border: 5px solid gainsboro; padding: 20px; border-radius: 8px"
+      >
+        <label class="GA-label">
+          GA: Average Score In Best 10 Assignments Out Of All Weekly Graded
+          Assignments.
+          <input type="number" value="100" min="0" max="100"
+        /></label>
+
+        <label class="TA-label"
+          >TA: Average Of Best 6 Out Of The First 8 Timed Assignments.<input
+            type="number"
+            value="5"
+            min="0"
+            max="5"
+        /></label>
+
+        <label class="Quiz1-label"
+          >Quiz1: Score In Quiz 1 [0, If Not Attempted].<input
+            type="number"
+            value="100"
+            min="0"
+            max="100"
+        /></label>
+
+        <label class="Quiz2-label"
+          >Quiz2: Score In Quiz 2 [0, If Not Attempted].<input
+            type="number"
+            value="100"
+            min="0"
+            max="100"
+        /></label>
+
+        <label class="OPPE1-label"
+          >OPPE1: Score In OPPE 1 [0, If Not Attempted].<input
+            type="number"
+            value="100"
+            min="0"
+            max="100"
+        /></label>
+
+        <label class="OPPE2-label"
+          >OPPE2: Score In OPPE 2 [0, If Not Attempted].<input
+            type="number"
+            value="100"
+            min="0"
+            max="100"
+        /></label>
+
+        <label class="F-label"
+          >F: Score In Final Exam.<input
+            type="number"
+            value="100"
+            min="0"
+            max="100"
+        /></label>
+
+        <label class="Bonus-label"
+          >Bonus: Bonus marks (max 5)<input
+            type="number"
+            value="5"
+            min="0"
+            max="5"
+        /></label>
+
+        <label class="StatisticsBonus-label"
+          >Bonus: Bonus marks (max 10)<input
+            type="number"
+            value="10"
+            min="0"
+            max="10"
+        /></label>
+      </section>
+
+      <section style="margin: 20px 0; font-size: 1.2em">
+        <div style="margin-bottom: 5px">
+          <strong> 🔰 Final Course Score: <span class="T">100</span> </strong>
+        </div>
+        <div style="margin-bottom: 5px">
+          <strong>
+            🔰 Grade Points: <span class="gradePoints">10</span>
+          </strong>
+        </div>
+        <div style="margin-bottom: 5px">
+          <strong> 🔰 Grade: <span class="grade">S</span> </strong>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
